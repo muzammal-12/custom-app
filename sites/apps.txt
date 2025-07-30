@@ -1,0 +1,3 @@
+frappe
+my_custom_app
+erpnext

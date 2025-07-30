@@ -1,0 +1,25 @@
+# Python
+*.pyc
+__pycache__/
+
+# Virtual environment
+env/
+*.egg-info/
+
+# Logs
+logs/
+
+# Site-specific files
+sites/*.sqlite3
+sites/*/logs/
+sites/*/files/
+
+# Database files
+*.db
+
+# Node.js
+node_modules/
+
+# System files
+*.bak
+*.swp
