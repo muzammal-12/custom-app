@@ -108,13 +108,3 @@ This is a custom app developed for ERPNext to manage user roles, tax system, and
 This app is licensed under the [MIT License](LICENSE).
 
 ```
-
-### **How to Add the README to GitHub:**
-1. Go to your GitHub repository.
-2. Under the "Code" tab, you'll see a section to add a `README.md`. If you already have a `README.md`, simply paste this into that file.
-3. Commit the changes.
-
-Once this is done, your repository will have a comprehensive `README` file that documents your custom app, including installation, configuration, usage, and troubleshooting.
-
-Let me know if you need any more adjustments!
-```
