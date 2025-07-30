@@ -18,22 +18,126 @@ This is a custom app developed for ERPNext to manage user roles, tax system, and
 
 ### Requirements
 
-- **ERPNext Version**: `15.70.1` 
-- **Frappe Version**: `15.74.2`
+- **ERPNext Version**: `15.70.1`
+- **Frappe Version**: `15.74.2` 
 - **Python Version**: `3.10.12` 
-- **Node.js Version**: `v18.20.8`
-- **Yarn Version**: `1.22.22`
-- Redis and MariaDB configured for ERPNext
+- **Node.js Version**: `v18.20.8` 
+- **Yarn Version**: `1.22.22` 
+- **Redis and MariaDB**
+
+### Installing the Dependencies
+
+#### 1. **Install Python 3.10**:
+To install Python 3.10, follow these commands:
+
+```bash
+sudo apt update
+sudo apt install python3.10 python3.10-venv python3.10-dev
+````
+
+#### 2. **Install Node.js (v18)**:
+
+To install Node.js v18, use the NodeSource repository:
+
+```bash
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+sudo apt install -y nodejs
+```
+
+Verify the installation with:
+
+```bash
+node --version
+```
+
+#### 3. **Install Yarn**:
+
+To install Yarn, use the following commands:
+
+```bash
+sudo apt update
+sudo apt install yarn
+```
+
+Verify the installation with:
+
+```bash
+yarn --version
+```
+
+#### 4. **Install Redis**:
+
+To install Redis:
+
+```bash
+sudo apt update
+sudo apt install redis-server
+```
+
+Verify the installation with:
+
+```bash
+redis-server --version
+```
+
+#### 5. **Install MariaDB**:
+
+To install MariaDB:
+
+```bash
+sudo apt update
+sudo apt install mariadb-server mariadb-client
+```
+
+Verify the installation with:
+
+```bash
+mysql --version
+```
+
+#### 6. **Install ERPNext**:
+
+To install ERPNext and Frappe, first, you need to install **bench**:
+
+```bash
+pip install frappe-bench
+```
+
+Then, initialize the bench environment:
+
+```bash
+bench init frappe-bench --frappe-branch version-15
+cd frappe-bench
+```
+
+Create a new site:
+
+```bash
+bench new-site erpsite.local
+```
+
+Install ERPNext:
+
+```bash
+bench get-app erpnext --branch version-15
+bench --site erpsite.local install-app erpnext
+```
+
+Finally, start the server:
+
+```bash
+bench start
+```
 
 ### Steps to Install the Custom App
 
 1. **Clone the repository**:
-   
+
    If you haven't already cloned the repository, use the following command:
-   
+
    ```bash
    git clone https://github.com/muzammal-12/custom-app.git
-````
+   ```
 
 2. **Move the app to the apps directory**:
 
@@ -109,4 +213,4 @@ This is a custom app developed for ERPNext to manage user roles, tax system, and
 
 This app is licensed under the [MIT License](LICENSE).
 
-```
+````
