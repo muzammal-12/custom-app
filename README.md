@@ -198,6 +198,9 @@ bench start
    * Further tax
    * Extra tax
 3. Enable **DSI (Domestic Sales Invoices)** and **SRB (Sales Tax on Services)** reports for tax compliance.
+4. Search for **DSI (Domestic Sales Invoices)** and **SRB (Sales Tax on Services)** and set filters and click **Upload to IRIS**
+5. This will generate a csv file of report which you can upload to IRIS site.
+6. Go to **https://iris.fbr.gov.pk/** and upload your file.
 
 ## Usage
 
