@@ -18,9 +18,11 @@ This is a custom app developed for ERPNext to manage user roles, tax system, and
 
 ### Requirements
 
-- ERPNext installed and running (version X.X.X)
-- Python 3.x
-- Node.js and Yarn (for front-end assets)
+- **ERPNext Version**: `15.70.1` 
+- **Frappe Version**: `15.74.2`
+- **Python Version**: `3.10.12` 
+- **Node.js Version**: `v18.20.8`
+- **Yarn Version**: `1.22.22`
 - Redis and MariaDB configured for ERPNext
 
 ### Steps to Install the Custom App
